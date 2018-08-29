@@ -37,3 +37,6 @@ require_once('functions.php');
 $errors = [];
 
 ?>
+
+<script src="func.js"></script>
+

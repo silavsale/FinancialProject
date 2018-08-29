@@ -1,5 +1,11 @@
 <?php
 
+//if (!defined('WWW_ROOT')) {
+//    define('WWW_ROOT', dirname(__FILE__) . DS);
+//    echo WWW_ROOT;
+////    die;
+//}
+
 function url_for($script_path)
 {
     // add the leading '/' if not present
@@ -52,13 +58,14 @@ function is_get_request()
     return $_SERVER['REQUEST_METHOD'] == 'GET';
 }
 
-function display_errors($errors=array()) {
+function display_errors($errors = array())
+{
     $output = '';
-    if(!empty($errors)) {
+    if (!empty($errors)) {
         $output .= "<div class=\"errors\">";
         $output .= "Please fix the following errors:";
         $output .= "<ul>";
-        foreach($errors as $error) {
+        foreach ($errors as $error) {
             $output .= "<li>" . h($error) . "</li>";
         }
         $output .= "</ul>";
@@ -66,6 +73,5 @@ function display_errors($errors=array()) {
     }
     return $output;
 }
-
 
 ?>
