@@ -48,7 +48,13 @@ include(SHARED_PATH . '/public_header.php')
 
 
             </form>
+            <?php
+                echo "<br />";
 
+                echo "<hr />";
+                echo "<br />";
+
+            ?>
             <p>For more information visit <a href="info.php" target="_blank">Info</a> page</> <br/></p><br/>
 
             <!-- End form -->
